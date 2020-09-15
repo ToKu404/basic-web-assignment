@@ -1,0 +1,64 @@
+/* NavBar */
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #e3e2df;
+    text-transform: uppercase;
+}
+.navbar-brand {
+    font-size: 32px;
+}
+.nav-link {
+    margin-right: 20px;
+}
+
+.nav-link:hover::after {
+    content: ' ';
+    display: block;
+    border-bottom: 3px solid #e20046;
+    width:50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(img/jumbotron-bg.jpg);
+    background-size: cover; 
+    text-align: center;
+    min-height: 500px;
+    margin-bottom: 0;
+}
+
+.carousel-container {
+    padding: 20px 20%;
+}
+.carousel-item img{
+    border-radius: 4em;
+}
+
+.gallery {
+    padding: 50px;
+    height: 100vh;
+    text-align: center;
+    background-color:#e3e2df;
+}
+.info {
+    padding: 50px;
+    
+}
+.info .title{
+    text-align: center;
+}
+h1 {
+    display: inline;
+    border-bottom: 3px solid #e20046
+}
+
+
+
+
+
+
