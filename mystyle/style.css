@@ -430,7 +430,7 @@ body {
     }
     .cr{
         display: inline-block;
-        animation: type 2s;
+        animation: type 2s 3;
         overflow: hidden;
         white-space: nowrap;
     }
