@@ -3,18 +3,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
+/* basic */
 body {
     background: #f4f6fa;
 }
-/* Navbar */
+.subtitle-head {
+    padding-bottom: 50px;
+}
+.subtitle-head h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #dc3d68;
+}
+.subtitle-head .stroker {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #dc3d68;
+}
+
+/* Header - Navbar */
 .navbar {
     background-color: #010101;
 }
 .navbar-brand {
     font-family: 'Pacifico', cursive;
     font-size: 32px;
-   
 }
 .nav-link, .navbar-brand{
     color: white;
@@ -42,31 +58,27 @@ body {
 } 
 
 
-/* Jumbotron */
-.jumbotron {
+/* Jumbotron - Hero*/
+.hero-background {
     background: url(../img/hero.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 215px 0 315px;
-    position: relative;
+    padding: 215px 0 315px; 
     background-attachment: fixed;
     border-bottom: 5px solid #dc3d68;
 }
 .hero-text {
     padding-left: 60px;
 }
-
 .hero-text h2 {
     color: #fff;
     font-family: 'Lato', sans-serif;
     font-size: 41px;
 }
-
 .hero-text h1 {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 5px;
+    column-gap: 9px;
     color: #fff;
     font-family: 'Lato', sans-serif;
     font-size: 48px;
@@ -80,10 +92,10 @@ body {
     padding-bottom: 26px;
     padding-top: 5px;
 }
-.hero-text h1 .cr {
+.hero-text h1 .h1-pink {
     color: #dc3d68;
-}
-
+}   
+    /* design button portfolio  */
 .hero-text a{
     font-weight: bold;
     position: relative;
@@ -139,24 +151,7 @@ body {
 
 /* About */
 #about {
-    padding: 90px 0;
-    
-}
-.about-head {
-    padding-bottom: 50px;
-}
-.about-head h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 5px;
-    border-bottom: 3px solid #dc3d68;
-}
-.about-head .stroker {
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #dc3d68;
+    padding: 90px 0;   
 }
 .about-text h2 {
     font-family: Lato;
@@ -202,7 +197,6 @@ body {
     background-size: cover;
 }
 .card-text {
-    grid-area: text;
     margin: 25px;
 }
 .card-text .tipe {
@@ -224,7 +218,6 @@ body {
     border-bottom-right-radius: 15px;
     background: rgb(255, 7, 110);
 }
-
 .card:hover {
     transform: scale(1.15);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
@@ -235,23 +228,19 @@ body {
 #portfolio {
     padding: 90px 0;
 }
-
 .list-portfolio{
     padding-top: 8px;
 }
 .list-portfolio .btn {
     width: 100%;
 }
-
 .port-item {
     margin:auto;
 }
-
 .port-item img {
     margin-top: 8px;
     width: 100%;
 }
-
 .list-group {
     font-family: roboto;
 }
@@ -286,14 +275,13 @@ body {
 #quotes {
     padding: 70px 0;
     background: url(../img/quotes.jpg);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
     z-index: 1;
 }
-.about-quo {
+.sub-quo {
     color: white;
     z-index: 1;
 }
@@ -384,7 +372,6 @@ body {
     border-radius: 50%;
     background: #dc3d68;
 }
-
 .cprt h2{
     padding:10px 0 0 0;
     color: white;
@@ -411,10 +398,10 @@ body {
     
     
 
-
+/* Desktop Layout */
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    
+    /* Nav */
     .nav-link {
         text-transform: uppercase;
         margin-right: 10px;
@@ -428,13 +415,14 @@ body {
         padding-bottom: 5px;
         margin-bottom: -8px;
     }
-    .cr{
+    /* header jumbotron animated */
+    .h1-pink{
         display: inline-block;
         animation: type 2s 3;
         overflow: hidden;
         white-space: nowrap;
     }
-    .cr::after {
+    .h1-pink::after {
         animation: blink 1.6s infinite;
         color: #dc3d68;
         content: '|';
@@ -445,7 +433,6 @@ body {
         }
         100% {
             width: 10ch;
-            border-right: none;
         }
     }
     @keyframes blink {
@@ -460,6 +447,5 @@ body {
         100% {
             opacity: 1;
         }
-    }
-    
+    } 
 }
