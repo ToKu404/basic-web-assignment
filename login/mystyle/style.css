@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "believer";
+    src: url('../fonts/Believer.otf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    background: url('../img/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.box {
+    background-color: white;
+    padding: 20px 40px 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    width: 300px;
+}
+.pink {
+    height: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #FF4081;
+}
+.box .img-user {
+    background: #FF4081;
+    border-radius: 50%;
+    border: 2.5px solid #FF4081;
+    width: 80px;
+}
+.box h3 {
+    margin: -10px 0 30px;
+    padding: 0;
+    color: #FF4081; 
+    font-family: believer;
+    font-size:50px;
+    box-sizing: border-box;
+}
+
+.box label {
+    font-family: 'Roboto', sans-serif;
+}
+
+.box .input {
+    padding: 10px 0;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 2px solid #999;
+    overflow: hidden;
+}
+.box .btn {
+    cursor: pointer;
+    background-color: #FF4081;
+    color: white;
+    width: 100%;
+    margin-bottom:0;
+}
+
+.box form div {
+    position: relative;
+}
+.box form div label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
+}
+.box input:focus ~ label, 
+.box input:valid ~ label{ 
+    top:-10px;
+    left: 0;
+    font-size: 11px;
+    color:#FF4081;
+    font-weight: bold;
+}
+.box input:focus{
+    border-bottom: 2px solid #FF4081;
+}
+
+
