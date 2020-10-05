@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+            body{
+                background: rgb(255, 245, 155);
+            }
+            h3 {
+                text-align: center;
+                margin: 30px;
+                font-weight: bold;
+                color: transparent;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: #27261d;
+                font-family: 'Poppins';
+            }
+            .soal {
+                padding: 10px;
+                border-radius: 3px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+                text-align: center;
+                margin-bottom: 20px;
+                width: 50%;
+                height: 150px;
+            }
+            .row {
+                display: flex;
+                
+            }
+            .c1 {
+                background-color: rgb(0, 206, 206);
+                flex-wrap:wrap;
+                
+            }
+            .c2 {
+                background-color: rgb(255, 94, 121);
+                flex-wrap: column;
+                
+            }
+            .soal p {
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            .soal button {
+                color: white;
+                font-weight: bold;
+                margin-top: 4px;
+            }
+            .hasil {
+                background-color: white;
+                width: 400px;
+                padding: 10px;
+                height: 400px;
+                overflow: auto;
+                flex-wrap: column;
+            }
+        </style>
+
+        <title>JAVASCRIPT DASAR</title>
+    </head>
+    <body>
+        <div class="container justify-content-center">
+            <h3 class="">BEBERAPA CONTOH SOAL</h3>
+            <div class="row">
+                <div class="col-7">
+                    <div class="row ai">
+                        <div class="soal c1">
+                            <p>Menentukan Jumlah (SUM) dan Rata-Rata (AVERAGE) dari Deretan Angka yang Diberikan</p>
+                            <button type="button" class="btn btn-primary" onclick="no1()">PROGRAM JS</button>
+                        </div>
+                        <div class="soal c2">
+                            <p>Mencari Angka Genap dan Ganjil antara 1 sampai N</p>
+                            <button type="button" class="btn btn-primary" onclick="no2()">PROGRAM JS</button>
+                        </div>
+                        <div class="soal c1" >
+                            <p>Mencari Jumlah (SUM) dari Deret 1+2+3…+N</p>
+                            <button type="button" class="btn btn-primary" onclick="no3()">PROGRAM JS</button>
+                        </div>
+                        <div class="soal c2">
+                            <p>Mencari Jumlah (SUM) dari Deret 1-X+X2-X3+…X^N</p>
+                            <button type="button" class="btn btn-primary" onclick="no4()">PROGRAM JS</button>
+                        </div>
+                        <div class="soal c1">
+                            <p>Mencetak Tabel Perkalian 1 sampai 10 Sebuah Bilangan</p>
+                            <button type="button" class="btn btn-primary" onclick="no5()">PROGRAM JS</button>
+                        </div>
+                        <div class="soal c2">
+                            <p>Menghasilkan n Suku Fibonacci Pertama 0, 1, 1, 2, 3, 5…n (n > 2)</p>
+                            <button type="button" class="btn btn-primary" onclick="no6()">PROGRAM JS</button>
+                        </div>
+                        <div class="soal c1">
+                            <p>Mengetahui Apakah Suatu Bilangann termasuk Bilangan Prima atau Tidak</p>
+                            <button type="button" class="btn btn-primary" onclick="no7()">PROGRAM JS</button>
+                        </div>
+                        <div class="soal c2">
+                            <p>Mencari Faktorial Bilangan n (n!=1x2x3x4x5x…xn)</p>
+                            <button type="button" class="btn btn-primary" onclick="no8()">PROGRAM JS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="hasil">
+                        <h4 id="title">Program </h4>
+                        <p id="papan"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
