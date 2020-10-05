@@ -1,8 +1,5 @@
-@font-face {
-    font-family: "believer";
-    src: url('../fonts/Believer.otf');
-}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
     background: url('../img/hero.jpg');
@@ -11,7 +8,6 @@ body {
     height: 100vh;
     background-position: center;
 }
-
 .box {
     background-color: white;
     padding: 20px 40px 40px;
@@ -33,11 +29,11 @@ body {
     width: 80px;
 }
 .box h3 {
-    margin: -10px 0 30px;
+    margin: -5px 0 30px;
     padding: 0;
     color: #FF4081; 
-    font-family: believer;
-    font-size:50px;
+    font-family: 'Pacifico', cursive;
+    font-size:40px;
     box-sizing: border-box;
 }
 
@@ -63,7 +59,11 @@ body {
     width: 100%;
     margin-bottom:0;
 }
+.box .btn:hover {
+    background-color: #f1296c;
+}
 
+/* Animation */
 .box form div {
     position: relative;
 }
