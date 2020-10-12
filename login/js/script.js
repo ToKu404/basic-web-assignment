@@ -6,7 +6,7 @@ $(document).ready(function(){
         const password = $('#password').val();
 
         $.ajax({
-            url : "./users.json",
+            url : "./js/users.json",
             success : result =>{
                 const users = result.Users
                 const validUser = users.filter(user =>{
@@ -28,7 +28,7 @@ $(document).ready(function(){
 
     $("#forgot").click(function(){
         $.ajax({
-            url : "./users.json",
+            url : "./js/users.json",
             success : result =>{
                 let data = ""
                 const users = result.Users
