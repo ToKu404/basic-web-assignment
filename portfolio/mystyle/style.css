@@ -4,9 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 /* basic */
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: #f4f6fa;
 }
+ 
 .subtitle-head {
     padding-bottom: 50px;
 }
@@ -23,7 +27,6 @@ body {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #dc3d68;
 }
-
 /* Header - Navbar */
 .navbar {
     background-color: #010101;
@@ -219,7 +222,7 @@ body {
     background: rgb(255, 7, 110);
 }
 .card:hover {
-    transform: scale(1.15);
+    transform: scale(1.15) !important;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 } 
 
