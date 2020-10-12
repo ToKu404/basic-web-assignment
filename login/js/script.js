@@ -13,7 +13,7 @@ $(document).ready(function(){
                     return user.username == username && user.password == password;
                 })
                 if(validUser.length>0){
-                    window.open("http://github.com")
+                    window.open("http://toku404.github.io/portfolio/index.html")
                 }else{
                     $(".alert").css("display","block")
                     $("#btnRetry").click(function(){
